@@ -1,3 +1,3 @@
 # anand-portfolio
 My Portfolio Website Repository! <br>
-Author - Anand Shenoy
+Created by - Anand Shenoy
