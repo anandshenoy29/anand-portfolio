@@ -1,0 +1,242 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: fit-content;
+    padding-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  #about {
+    scroll-margin-top: 17vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    height: fit-content;
+  }
+
+  #skills {
+    scroll-margin-top: 16vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+
+  #projects {
+    scroll-margin-top: 8vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+
+  #contact {
+    scroll-margin-top: 3vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 1;
+  }
+
+  #profile {
+    height: fit-content;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  #about {
+    scroll-margin-top: 13vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  #skills {
+    scroll-margin-top: 16vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  #projects {
+    scroll-margin-top: 8vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+  }
+
+  #contact {
+    scroll-margin-top: 8vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+  }
+}
+
+/* 2 per row on tablets */
+@media screen and (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #profile {
+    height: fit-content;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  #about {
+    scroll-margin-top: 13vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  #skills {
+    scroll-margin-top: 17vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  #projects {
+    scroll-margin-top: 9vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+  }
+
+  #contact {
+    scroll-margin-top: 8vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+  }
+
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  /* 1 per row on mobile */
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Structural Adjustments */
+  
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .text-container {
+    text-align: center;
+  }
+
+  /* Typography */
+  article {
+    font-size: 1rem;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Project Cards Expansion */
+  .projects-details-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  #projects .details-container {
+    min-width: 85%;
+    max-width: 85%;
+  }
+
+  #profile {
+    height: fit-content;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem; 
+    margin-top: 0rem;
+  }
+
+  #about {
+    scroll-margin-top: 13vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  #skills {
+    scroll-margin-top: 17vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  #projects {
+    scroll-margin-top: 7vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+  }
+
+  #contact {
+    scroll-margin-top: 8vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+}

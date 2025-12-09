@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anand Shenoy Portfolio</title>
+    <link rel="icon" href="./assets/anand.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediascreens.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#" onclick="handleHomeClick(event)">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#" onclick="handleHomeClick(event)">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/anand.png" alt="Anand Shenoy" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anand Shenoy</h1>
+        <p class="section__text__p2">Aspiring Data Scientist</p>
+        <div class="socials-container">
+          <div class="linkedin">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="social-icon" onclick="location.href='https://www.linkedin.com/in/anandshenoy29/'" />
+          </div>
+          <div class="github">
+            <img src="./assets/github.png" alt="My Github profile" class="social-icon" onclick="location.href='https://github.com/anandshenoy29/'" />
+          </div>
+          <div class="youtube">
+            <img src="./assets/youtube.png" alt="My YouTube channel" class="social-icon" onclick="location.href='https://www.youtube.com/@LearnWithAnandYouTube'" />
+          </div>
+          <div class="instagram">
+            <img src="./assets/instagram.png" alt="My Instagram profile" class="social-icon" onclick="location.href='https://www.instagram.com/anandshenoy29/'" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p class="about-text">
+              Enthusiastic MSc IT student with a strong foundation in Data Science, Analysis and Visualization. I’m proficient in working with Python, SQL/NoSQL, and Data Visualization tools to process data, analyze statistics, and build predictive models. I’m looking for an entry-level position where I can keep learning and apply my skills to real-world projects of the organization.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="static-icon" />
+              <h3>Education</h3><br>
+              <p class="about-education">
+                <b>
+                  Master of Science in Information Technology | Jul 2025 - Present | Sem I - 10 SGPI<br><br>
+                  Bachelor of Science in Information Technology | Jul 2022 - Apr 2025 | 9.27 CGPI<br><br>
+                  Higher Secondary Certificate (Science) | Mar 2022 | 60.00%<br><br>
+                  Secondary School Certificate | Apr 2020 | 91.20%
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-wrapper">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>Artificial Intelligence</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>Deep Learning</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>Python</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>Java</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>Flask</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>MS Excel</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>MS Power BI</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>Tableau</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>MySQL</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>MongoDB</h3>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/checkmark.png" class="static-icon" />
+            <h3>PostgreSQL</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="projects-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/emotavia-project.png" alt="Project" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Emotional Support System</h2>
+            <div class="project-description">
+              <p>
+                ✅ Developed an MVP website for BAMMC student who showcased the project at the University of Mumbai's Aavishkar Inter-Collegiate Research Convention 2025-26.<br>
+                ✅ Designed user friendly interfaces along with AI Integration for Mood detection and daily email reminders.<br><br>
+                ⚙️ <b>Technologies:</b> Python Flask, HTML, CSS, JavaScript & ChatGPT model<br>
+                ⚙️ <b>Development Tools:</b> Python, PyCharm & MySQL
+              </p>
+            </div><br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anandshenoy29/emotavia-project'">
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1ShbdgBtGwBSQ8CVabhN64SmRRVWsZBBD/view?usp=drive_link'">
+                Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/trainease-project.png" alt="Project" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Train Ticket Booking System</h2>
+            <div class="project-description">
+              <p>
+                ✅ Developed a demo desktop-based application for Mumbai Suburban local train bookings.<br>
+                ✅ Designed user friendly interfaces for better user experience.<br><br>
+                ⚙️ <b>Technologies:</b> Java Swing & JDBC<br>
+                ⚙️ <b>Development Tools:</b> Java JDK, IntelliJ IDEA & MySQL
+              </p>
+            </div><br><br><br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anandshenoy29/trainease-project'">
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/DMVS9A16KiA'">
+                Demo
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="projects-details-container">
+        <div class="about-containers-1"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container2">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" onclick="location.href='mailto:anandshenoy29@gmail.com'" />
+          <p><a href="mailto:anandshenoy29@gmail.com">anandshenoy29@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container2">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" onclick="location.href='https://www.linkedin.com/in/anandshenoy29/'" />
+          <p><a href="https://www.linkedin.com/in/anandshenoy29/">/anandshenoy29</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#" onclick="handleHomeClick(event)">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; Anand Shenoy. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
