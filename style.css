@@ -496,12 +496,6 @@ article .icon {
 }
 
 /* CONTACT SECTION */
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80vh;
-}
 
 .contact-info-upper-container {
   display: flex;
@@ -592,4 +586,5 @@ footer p {
     padding-top: 2rem;
     margin-top: 0rem;
     height: fit-content;
+
   }
