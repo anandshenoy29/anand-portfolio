@@ -1,0 +1,292 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: fit-content;
+    padding-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  #about {
+    scroll-margin-top: 17vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    height: fit-content;
+  }
+
+  #skills {
+    scroll-margin-top: 16vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+
+  #projects {
+    scroll-margin-top: 8vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+
+  #contact {
+    scroll-margin-top: 3vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 1;
+  }
+
+  #profile {
+    height: fit-content;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  #about {
+    scroll-margin-top: 13vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  #skills {
+    scroll-margin-top: 16vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  #projects {
+    scroll-margin-top: 8vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+  }
+
+  #contact {
+    scroll-margin-top: 8vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+  }
+}
+
+/* 2 per row on tablets */
+@media screen and (max-width: 900px) {
+  /* Applying the Flexbox structure from mobile */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 2.5rem; /* Slightly larger gap for tablet spacing */
+  }
+
+  /* Hide the hard breaks to allow natural, balanced wrapping */
+  .break {
+    display: none;
+  }
+
+  /* Larger icons for tablet view */
+  .skill-icon {
+    height: 4.5rem; 
+    width: auto;
+  }
+
+  .skill-card {
+    padding: 0;
+    margin: 10px; /* Breathing room for larger icons */
+  }
+
+  .about-containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #profile {
+    height: fit-content;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  #about {
+    scroll-margin-top: 13vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  #skills {
+    scroll-margin-top: 17vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  #projects {
+    scroll-margin-top: 9vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+  }
+
+  #contact {
+    scroll-margin-top: 8vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+  }
+
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  /* Updated for Flexbox logic */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 1.5rem; /* Reduced gap to save horizontal space */
+  }
+
+  /* Hide the hard breaks on mobile to allow natural, balanced wrapping */
+  .break {
+    display: none;
+  }
+
+  /* Shrink icons slightly so 3 can fit side-by-side */
+  .skill-icon {
+    height: 3.8rem; 
+    width: auto;
+  }
+
+  .skill-card {
+    padding: 0;
+    margin: 5px; /* Adds a tiny bit of breathing room */
+  }
+
+  /* Structural Adjustments */
+  
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .text-container {
+    text-align: center;
+  }
+
+  /* Typography */
+  article {
+    font-size: 1rem;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Project Cards Expansion */
+  .projects-details-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  #projects .details-container {
+    min-width: 85%;
+    max-width: 85%;
+  }
+
+  #profile {
+    height: fit-content;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem; 
+    margin-top: 0rem;
+  }
+
+  #about {
+    scroll-margin-top: 13vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  #skills {
+    scroll-margin-top: 17vh;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  #projects {
+    scroll-margin-top: 7vh;
+    padding-top: 4rem;
+    margin-top: 0rem;
+  }
+
+  #contact {
+    scroll-margin-top: 8vh;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    height: fit-content;
+  }
+}
