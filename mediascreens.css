@@ -105,15 +105,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem 2.5rem; /* Slightly larger gap for tablet spacing */
+    gap: 2rem 2.5rem;
   }
-
-  /* Hide the hard breaks to allow natural, balanced wrapping */
+  
   .break {
     display: none;
   }
 
-  /* Larger icons for tablet view */
   .skill-icon {
     height: 4.5rem; 
     width: auto;
@@ -121,7 +119,7 @@
 
   .skill-card {
     padding: 0;
-    margin: 10px; /* Breathing room for larger icons */
+    margin: 10px;
   }
 
   .about-containers {
@@ -171,28 +169,25 @@
 
 /* Mobile Devices */
 @media screen and (max-width: 600px) {
-  /* Updated for Flexbox logic */
   .skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem 1.5rem; /* Reduced gap to save horizontal space */
+    gap: 1.5rem 1.5rem;
   }
 
-  /* Hide the hard breaks on mobile to allow natural, balanced wrapping */
   .break {
     display: none;
   }
 
-  /* Shrink icons slightly so 3 can fit side-by-side */
   .skill-icon {
-    height: 3.8rem; 
+    height: 3.6rem; 
     width: auto;
   }
 
   .skill-card {
     padding: 0;
-    margin: 5px; /* Adds a tiny bit of breathing room */
+    margin: 5px;
   }
 
   /* Structural Adjustments */
@@ -290,3 +285,4 @@
     height: fit-content;
   }
 }
+
