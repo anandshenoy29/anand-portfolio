@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anand Shenoy Portfolio</title>
+    <link rel="icon" href="./assets/anand-portfolio.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediascreens.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#" onclick="handleHomeClick(event)">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <a href="#" onclick="handleHomeClick(event)">Home</a>
+          <a href="#about" onclick="toggleMenu()">About</a>
+          <a href="#skills" onclick="toggleMenu()">Skills</a>
+          <a href="#projects" onclick="toggleMenu()">Projects</a>
+          <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/anand-portfolio.png" alt="Anand Shenoy" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anand Shenoy</h1>
+        <p class="section__text__p2">AI & ML Enthusiast</p>
+        <div class="socials-container">
+          <div class="linkedin">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="social-icon" onclick="location.href='https://www.linkedin.com/in/anandshenoy29/'" />
+          </div>
+          <div class="github">
+            <img src="./assets/github.png" alt="My Github profile" class="social-icon" onclick="location.href='https://github.com/anandshenoy29/'" />
+          </div>
+          <div class="youtube">
+            <img src="./assets/youtube.png" alt="My YouTube channel" class="social-icon" onclick="location.href='https://www.youtube.com/@LearnWithAnandYouTube'" />
+          </div>
+          <div class="instagram">
+            <img src="./assets/instagram.png" alt="My Instagram profile" class="social-icon" onclick="location.href='https://www.instagram.com/anandshenoy29/'" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p class="about-text">
+              Passionate MSc IT student with a strong foundation in Artificial Intelligence, Machine Learning, Data Analytics and Visualization. Proficient in Python, SQL, and statistical modeling, with a current focus on applying Generative AI and LLM frameworks to transform raw data into actionable intelligence. Currently seeking internships or entry-level opportunities where I can apply my skills to impactful projects and solve real-world problems.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="static-icon" />
+              <h3>Education</h3><br>
+              <p class="about-education">
+                <b>
+                  Master of Science in Information Technology | Jul 2025 - Present | Sem I - 10 SGPI<br><br>
+                  Bachelor of Science in Information Technology | Jul 2022 - Apr 2025 | 9.27 CGPI<br><br>
+                  Higher Secondary Certificate (Science) | Mar 2022 | 60.00%<br><br>
+                  Secondary School Certificate | Apr 2020 | 91.20%
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-wrapper">
+        <div class="skills-grid">
+          <div class="skill-card"><a>Python</a></div>
+          <div class="skill-card"><a>Java</a></div>
+          <div class="skill-card"><a>JavaScript</a></div>
+          <div class="break"></div>
+          <div class="skill-card"><a>LLMs</a></div>
+          <div class="skill-card"><a>AI Agents</a></div>
+          <div class="skill-card"><a>RAG</a></div>
+          <div class="skill-card"><a>Prompt Engineering</a></div>
+          <div class="break"></div>
+          <div class="skill-card"><a>NumPy</a></div>
+          <div class="skill-card"><a>Pandas</a></div>
+          <div class="skill-card"><a>Matplotlib</a></div>
+          <div class="skill-card"><a>Seaborn</a></div>
+          <div class="skill-card"><a>Scikit-Learn</a></div>
+          <div class="skill-card"><a>LangChain</a></div>
+          <div class="break"></div>
+          <div class="skill-card"><a>HTML</a></div>
+          <div class="skill-card"><a>CSS</a></div>
+          <div class="skill-card"><a>Flask</a></div>
+          <div class="skill-card"><a>Streamlit</a></div>
+          <div class="break"></div>
+          <div class="skill-card"><a>MySQL</a></div>
+          <div class="skill-card"><a>ChromaDB</a></div>
+          <div class="skill-card"><a>MS Excel</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="projects-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/context-aware-research-assistant-project.png" alt="Project" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Context-Aware Research Assistant</h2>
+            <div class="project-description">
+              <p>
+                Built an AI agent-powered RAG web application for accurate document analysis using Python and LangChain, integrating Google's Gemini 2.5 Flash and ChromaDB for intelligent semantic retrieval, dynamic web search routing, and hallucination mitigation to safely query dense proprietary data.
+              </p>
+            </div><br><br><br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anandshenoy29/context-aware-research-assistant-project'">
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/videos/d/1zkRlEL1lSd0jrBVwqL9bcyBHskXfihTQoZQ2uyRRrRQ/edit?usp=sharing'">
+                Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/sleep-quality-prediction-project.jpg" alt="Project" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Sleep Quality Prediction</h2>
+            <div class="project-description">
+              <p>
+                Developed a machine learning model to predict sleep quality from lifestyle data using Scikit-Learn, achieving 85.19% accuracy and an 0.88 ROC-AUC score with an optimized Random Forest classifier, validated by a custom overfitting framework.
+              </p>
+            </div><br><br><br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anandshenoy29/sleep-quality-prediction-research-project'">
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1wrqP7-qtLUWHmWxVDYXr8kmK8vJ0YG1q/view?usp=drive_link'">
+                Paper
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/emotional-support-system-project.jpg" alt="Project" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Emotional Support System</h2>
+            <div class="project-description">
+              <p>
+                Built a comprehensive web application for proactive mental health support using Python and Flask, integrating OpenAI's GPT-4o-mini for intelligent mood analysis, automated daily check-ins, and secure data handling to foster emotional well-being.
+              </p>
+            </div><br><br><br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anandshenoy29/emotional-support-system-project'">
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/videos/d/1mI3me8E2V2IRBOlHUXxHf1hxezMOpSr6FSIxaja0Nw0/edit?usp=drive_link'">
+                Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/train-ticket-booking-system-project.jpg" alt="Project" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Train Ticket Booking System</h2>
+            <div class="project-description">
+              <p>
+                Built a dedicated desktop application for Mumbai local train ticketing using Java and MySQL, integrating secure user authentication, instant digital ticket generation, and a centralized admin dashboard to streamline daily commuting.
+              </p>
+            </div><br><br><br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anandshenoy29/train-ticket-booking-system-project'">
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/DMVS9A16KiA'">
+                Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" onclick="location.href='mailto:anandshenoy29@gmail.com'" />
+          <p><a href="mailto:anandshenoy29@gmail.com">anandshenoy29@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" onclick="location.href='https://www.linkedin.com/in/anandshenoy29/'" />
+          <p><a href="https://www.linkedin.com/in/anandshenoy29/">/anandshenoy29</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#" onclick="handleHomeClick(event)">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; <span id="current-year"></span> Anand Shenoy. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
