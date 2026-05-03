@@ -195,6 +195,7 @@ section {
 .socials-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   gap: 1rem;
 }
