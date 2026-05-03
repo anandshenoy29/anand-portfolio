@@ -201,7 +201,7 @@ section {
 
 .linkedin img,
 .github img,
-.youtube img,
+.email img,
 .instagram img {
   object-fit: cover;
   transition: transform 0.8s;
@@ -209,7 +209,7 @@ section {
 
 .linkedin:hover img,
 .github:hover img,
-.youtube:hover img,
+.email:hover img,
 .instagram:hover img {
   transform: scale(1.5);
 }
