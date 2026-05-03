@@ -199,17 +199,17 @@ section {
   gap: 1rem;
 }
 
+.email img,
 .linkedin img,
 .github img,
-.email img,
 .instagram img {
   object-fit: cover;
   transition: transform 0.8s;
 }
 
+.email:hover img,
 .linkedin:hover img,
 .github:hover img,
-.email:hover img,
 .instagram:hover img {
   transform: scale(1.5);
 }
