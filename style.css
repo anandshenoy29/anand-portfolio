@@ -311,6 +311,7 @@ section {
 
 .about-text {
   font-size: 20px;
+  text-align: justify;
 }
 
 #skills {
@@ -446,7 +447,7 @@ section {
 }
 
 .project-description {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 0.5rem;
 }
 
